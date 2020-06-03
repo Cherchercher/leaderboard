@@ -1,0 +1,94 @@
+$max-width-canvas: 1280px;
+$line-height-toolbar: 20px;
+$content-width: 40em;
+$h2-font-size: 1.5em;
+$h2-line-height: 1.4;
+$header-padding-top: 1.5rem;
+$header-padding-bottom: 1rem;
+$font-size-table: 14px;
+$line-height-table: 1.4;
+$table-border-spacing: 5px;
+
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.inner-canvas {
+  background: white;
+  border-radius: 2px;
+  max-width: $max-width-canvas;
+  font-family: "Raleway";
+  padding: 0.5em;
+  position: relative;
+
+  .header {
+    width: $content-width;
+    padding-top: $header-padding-top;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    padding-bottom: $header-padding-bottom;
+    h2 {
+      font-size: $h2-font-size;
+      line-height: $h2-line-height;
+    }
+  }
+}
+
+.fl-right {
+  float: right;
+  border-bottom: 1px solid #888;
+}
+
+.table {
+  font-family: "Ubuntu";
+  font-weight: 300;
+  font-size: $font-size-table;
+  line-height: $line-height-table;
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: $table-border-spacing;
+}
+
+.table-header {
+  font-weight: 700;
+  display: table-row;
+  width: 100%;
+}
+
+.table-header span {
+  display: table-cell;
+  border-bottom: 1px solid #333;
+}
+
+.table-data-row {
+  font-weight: 300;
+  display: table-row;
+}
+
+.table-data-row span {
+  display: table-cell;
+  border-bottom: 1px lightgrey dotted;
+  vertical-align: middle;
+}
+
+.nr {
+  text-align: left;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For everything bigger than 768px */
+  .splitscreen {
+    display: flex;
+  }
+  .splitscreen .left {
+    flex: 1;
+  }
+  .splitscreen .right {
+    flex: 1;
+  }
+}
