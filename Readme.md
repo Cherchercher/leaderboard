@@ -16,7 +16,7 @@ Your app should now be running on [localhost:3000](http://localhost:3000/)
 
 1. Show a list of all creators sorted by highest open status first and won status second.
 
-2. Show distribution of deals by count grouped by status (open, close, won)
+2. Show distribution of deals by count or value grouped by status (open, close, won)
 
 3. Show a list of open deals sort by value
 
