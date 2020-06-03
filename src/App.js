@@ -37,7 +37,7 @@ const About = (props) => (
       </dd>
       <dt>Deal distribution</dt>
       <dd>
-        - Show distribution of deals by count grouped by status (open, close,
+        - Show distribution of deals by count or value grouped by status (open, close,
         won)
       </dd>
       <dt>Open Deals</dt>
