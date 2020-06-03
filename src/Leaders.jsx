@@ -3,7 +3,6 @@ import { Link, Route } from "react-router-dom";
 import _ from "lodash";
 import Leader from "./Leader";
 import leaders from "./data/leaders.json";
-import "./css/table.scss";
 
 const Leaders = ({ match }) => {
   let result = leaders.reduce((accumulator, object) => {

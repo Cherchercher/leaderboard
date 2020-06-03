@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link, Route, Switch } from "react-router-dom";
+import "./css/style.scss";
 import Leaders from "./Leaders";
 
 class App extends Component {
@@ -26,8 +27,8 @@ class App extends Component {
 }
 
 const About = (props) => (
-  <div>
-    <h3>Welcome! At the Leaderboard page you will find:</h3>
+  <div className="inner-canvas">
+    <h2>Welcome! At the leaderboard page you will find:</h2>
     <dl>
       <dt>Leaderboard</dt>
       <dd>
